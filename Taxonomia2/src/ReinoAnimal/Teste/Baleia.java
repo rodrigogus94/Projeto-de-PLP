@@ -1,13 +1,13 @@
 package ReinoAnimal.Teste;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Mamifero;
 import ReinoAnimal.Especie.Viviparo;
 import ReinoAnimal.Familia.Delphinidae;
 import ReinoAnimal.Genero.Aquaticos;
 import ReinoAnimal.Ordem.Carnivora;
 
-public class Baleia extends Animal implements Mamifero, Carnivora, Aquaticos, Delphinidae, Viviparo{
+public class Baleia extends AnimalImpl implements Mamifero, Carnivora, Aquaticos, Delphinidae, Viviparo{
 
 	@Override
 	public void parir() {

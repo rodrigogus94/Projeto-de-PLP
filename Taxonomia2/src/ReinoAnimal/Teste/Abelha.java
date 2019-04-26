@@ -1,13 +1,13 @@
 package ReinoAnimal.Teste;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Inseto;
 import ReinoAnimal.Especie.Oviparo;
 import ReinoAnimal.Familia.Hymenoptera;
 import ReinoAnimal.Genero.Aereo;
 import ReinoAnimal.Ordem.Nectarivoros;
 
-public class Abelha extends Animal implements Inseto, Nectarivoros, Aereo, Hymenoptera, Oviparo {
+public class Abelha extends AnimalImpl implements Inseto, Nectarivoros, Aereo, Hymenoptera, Oviparo {
 
 	@Override
 	public void oviparidade() {

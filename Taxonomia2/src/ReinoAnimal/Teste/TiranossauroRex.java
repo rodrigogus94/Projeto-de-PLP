@@ -1,13 +1,13 @@
 package ReinoAnimal.Teste;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Reptil;
 import ReinoAnimal.Especie.Oviparo;
 import ReinoAnimal.Familia.Tyrannosauridae;
 import ReinoAnimal.Genero.Terrestre;
 import ReinoAnimal.Ordem.Carnivora;
 
-public class TiranossauroRex extends Animal implements Reptil, Carnivora, Terrestre, Tyrannosauridae, Oviparo{
+public class TiranossauroRex extends AnimalImpl implements Reptil, Carnivora, Terrestre, Tyrannosauridae, Oviparo{
 
 	@Override
 	public void oviparidade() {

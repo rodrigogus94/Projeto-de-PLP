@@ -1,14 +1,14 @@
 package ReinoAnimal.Teste;
 
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Condrictions;
 import ReinoAnimal.Especie.Ovoviviparos;
 import ReinoAnimal.Familia.Lamnidae;
 import ReinoAnimal.Genero.Aquaticos;
 import ReinoAnimal.Ordem.Carnivora;
 
-public class Tubarao extends Animal implements Condrictions, Carnivora, Aquaticos, Lamnidae, Ovoviviparos {
+public class Tubarao extends AnimalImpl implements Condrictions, Carnivora, Aquaticos, Lamnidae, Ovoviviparos {
 
 	@Override
 	public void oviparidade() {

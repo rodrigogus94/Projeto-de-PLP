@@ -1,13 +1,13 @@
 package ReinoAnimal.Teste;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Mamifero;
 import ReinoAnimal.Especie.Oviparo;
 import ReinoAnimal.Familia.Ornithorhynchidae;
 import ReinoAnimal.Genero.Aquaticos;
 import ReinoAnimal.Ordem.Carnivora;
 
-public class Ornitorrinco extends Animal implements Mamifero, Carnivora, Aquaticos, Ornithorhynchidae, Oviparo{
+public class Ornitorrinco extends AnimalImpl implements Mamifero, Carnivora, Aquaticos, Ornithorhynchidae, Oviparo{
 
 	@Override
 	public void nada() {

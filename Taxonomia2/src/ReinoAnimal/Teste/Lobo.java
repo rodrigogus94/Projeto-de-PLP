@@ -1,13 +1,13 @@
 package ReinoAnimal.Teste;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Mamifero;
 import ReinoAnimal.Especie.Viviparo;
 import ReinoAnimal.Familia.Canideos;
 import ReinoAnimal.Genero.Terrestre;
 import ReinoAnimal.Ordem.Carnivora;
 
-public class Lobo extends Animal implements Mamifero, Carnivora, Canideos, Terrestre, Viviparo {
+public class Lobo extends AnimalImpl implements Mamifero, Carnivora, Canideos, Terrestre, Viviparo {
 
 	@Override
 	public void parir() {

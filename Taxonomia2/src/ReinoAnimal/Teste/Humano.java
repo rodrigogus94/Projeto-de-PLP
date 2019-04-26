@@ -4,14 +4,14 @@ import java.awt.JobAttributes;
 
 import javax.swing.JOptionPane;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Mamifero;
 import ReinoAnimal.Especie.Viviparo;
 import ReinoAnimal.Familia.Homininae;
 import ReinoAnimal.Genero.Terrestre;
 import ReinoAnimal.Ordem.Omnivoro;
 
-public class Humano extends Animal implements Mamifero, Omnivoro, Homininae, Terrestre, Viviparo {
+public class Humano extends AnimalImpl implements Mamifero, Omnivoro, Homininae, Terrestre, Viviparo {
 
 	@Override
 	public void andar() {

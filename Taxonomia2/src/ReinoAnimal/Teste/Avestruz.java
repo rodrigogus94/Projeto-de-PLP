@@ -1,13 +1,13 @@
 package ReinoAnimal.Teste;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Aves;
 import ReinoAnimal.Especie.Oviparo;
 import ReinoAnimal.Familia.Struthionidae;
 import ReinoAnimal.Genero.Terrestre;
 import ReinoAnimal.Ordem.Herbivoro;
 
-public class Avestruz extends Animal implements Aves, Herbivoro, Terrestre, Struthionidae, Oviparo {
+public class Avestruz extends AnimalImpl implements Aves, Herbivoro, Terrestre, Struthionidae, Oviparo {
 
 	@Override
 	public void camelus() {

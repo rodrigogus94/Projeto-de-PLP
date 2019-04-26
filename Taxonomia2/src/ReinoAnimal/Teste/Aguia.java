@@ -1,13 +1,13 @@
 package ReinoAnimal.Teste;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Aves;
 import ReinoAnimal.Especie.Oviparo;
 import ReinoAnimal.Familia.Accipitridae;
 import ReinoAnimal.Genero.Aereo;
 import ReinoAnimal.Ordem.Carnivora;
 
-public class Aguia extends Animal implements Aves, Carnivora, Accipitridae, Aereo, Oviparo {
+public class Aguia extends AnimalImpl implements Aves, Carnivora, Accipitridae, Aereo, Oviparo {
 
 	@Override
 	public void voar() {

@@ -1,13 +1,13 @@
 package ReinoAnimal.Teste;
 
-import ReinoAnimal.Animal;
+import ReinoAnimal.AnimalImpl;
 import ReinoAnimal.Classe.Reptil;
 import ReinoAnimal.Especie.Oviparo;
 import ReinoAnimal.Familia.Cheloniidae;
 import ReinoAnimal.Genero.Aquaticos;
 import ReinoAnimal.Ordem.Omnivoro;
 
-public class Tartaruga extends Animal implements Reptil, Omnivoro, Aquaticos, Cheloniidae, Oviparo{
+public class Tartaruga extends AnimalImpl implements Reptil, Omnivoro, Aquaticos, Cheloniidae, Oviparo{
 
 	@Override
 	public void comevegetal() {
