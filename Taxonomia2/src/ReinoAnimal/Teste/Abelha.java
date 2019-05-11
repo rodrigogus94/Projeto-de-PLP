@@ -42,7 +42,7 @@ public class Abelha extends AnimalImpl implements Inseto, Nectarivoros, Aereo, H
 	@Override
 	public void inprimir() {
 		System.out.println("Abelha da Clase Inseto");
-		Abelha.this.exoesqueleto();;
+		Abelha.this.exoesqueleto();
 		System.out.println("Abelha do Genero Aereo");
 		Abelha.this.voar();
 		System.out.println("Abelha da Ordem Ncetarivoros");

@@ -41,20 +41,34 @@ public class DAOImpl implements DAO {
 
 	@Override
 	public int excluir(int... ids) {
-		// TODO Auto-generated method stub
-		return 0;
+		List<Integer> lista = new ArrayList<Integer>();
+		for(int id: ids) {
+			for (int i = 0; i < dados.size(); i++) {
+				if(dados.get(i).getId() == id) {
+					dados.remove(i);
+					JOptionPane.showMessageDialog(null, "Animal excluido com sucesso!");
+				}
+				
+			}
+			
+			
+		}
+		return lista.size();
 	}
 
 	@Override
 	public AnimalImpl pesquisar(int id) {
-		// TODO Auto-generated method stub
+		for (Animal animal: dados) {
+			if(animal.getId() == id) {
+				return (AnimalImpl) animal;
+			}
+		} 
 		return null;
 	}
 
 	@Override
 	public List<Animal> listarTodos() {
-		// TODO Auto-generated method stub
-		return null;
+		return dados;
 	}
 
 }

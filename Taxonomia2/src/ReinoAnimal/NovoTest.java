@@ -63,38 +63,88 @@ public class NovoTest {
 					if (opc2 == 1) {
 						id = Integer.parseInt(JOptionPane.showInputDialog("Digite o ID do animal"));
 						a.setId(id);
+						break;
 
 					} else if (opc2 == 2) {
+						String nome = JOptionPane.showInputDialog("Digite o nome do animal");
+						a.setNome(nome);
+						break;
 
 					} else if (opc2 == 3) {
 
+						String classe = JOptionPane.showInputDialog("Digite a classe do animal");
+						a.setClasse(classe);
+						break;
+
 					} else if (opc2 == 4) {
+
+						String genero = JOptionPane.showInputDialog("Digite o genero do animal");
+						a.setGenero(genero);
+						break;
 
 					} else if (opc2 == 5) {
 
+						String ordem = JOptionPane.showInputDialog("Digite a ordem do animal");
+						a.setOrdem(ordem);
+						break;
+
 					} else if (opc2 == 6) {
+
+						String especie = JOptionPane.showInputDialog("Digite a especie do animal");
+						a.setEspecie(especie);
+						break;
 
 					} else if (opc2 == 7) {
 
-					} else if (opc2 == 8) {
+						String familia = JOptionPane.showInputDialog("Digite a familia do animal");
+						a.setFamilia(familia);
+						break;
 
 					} else if (opc2 == 0) {
+						break;
 
 					}
 				} else {
-						JOptionPane.showMessageDialog(null, "O Id não tem animal cadastrado, gostaria de cadastrar?");
-					
-						
+					JOptionPane.showMessageDialog(null, "O Id não tem animal cadastrado, gostaria de cadastrar?");
+
 				}
 				break;
 
 			case 3:
+				id = Integer.parseInt(JOptionPane.showInputDialog("Digite a ID do animais para alteração:"));
+				if (a.getId() == id) {
+					dao.excluir(id);
+					break;
+				} else {
+					JOptionPane.showMessageDialog(null, "id não cadastrado");
+				}
+				break;
 
 			case 4:
-
+				id = Integer.parseInt(JOptionPane.showInputDialog("Digite a ID do animais para alteração:"));
+				if (a.getId() == id) {
+					dao.pesquisar(id);
+				}else {
+					JOptionPane.showMessageDialog(null, "id não cadastrado");
+				}
+				break;
+					
+				
 			case 5:
+				if (dao.listarTodos() != null) {
+					dao.listarTodos();
+					break;
+				} else {
+					JOptionPane.showMessageDialog(null, "lista vazia, gostaria de cadastrar?");
+
+				}
+				break;
+			case 0:
+				JOptionPane.showMessageDialog(null, "volte sempre");
+				break;
 
 			}
+
 		}
 
 	}
